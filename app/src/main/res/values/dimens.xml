@@ -1,3 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="parent_padding_horizontal">15dp</dimen>
+    <dimen name="parent_padding_vertical">10dp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
 </resources>
