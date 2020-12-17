@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Who is the co-founder of Android?"
@@ -33,14 +33,15 @@
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:checkedButton="@id/radioButtonFirst"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
         <RadioButton
+            android:id="@+id/radioButtonFirst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="0dp"
-            android:checked="true"
             android:text="One"
             android:textSize="@dimen/text_size_normal" />
         <RadioButton
@@ -56,7 +57,7 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/btnStart"
+        android:id="@+id/btnConfirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/btn_bg"

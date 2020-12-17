@@ -11,7 +11,9 @@ import com.example.madlevel7task2.R
 import com.google.firebase.FirebaseApp
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
+import kotlinx.coroutines.*
 import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
 
-        FirebaseFirestore.setLoggingEnabled(true)
+        //FirebaseFirestore.setLoggingEnabled(true)
         FirebaseApp.initializeApp(this)
     }
 
